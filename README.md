@@ -80,7 +80,7 @@ Configure and test basic firewall rules to allow or block traffic on a Windows o
    ```
    then delete using number
    ```bash
-   sudo ufw delete <number>
+   sudo ufw delete 4
    ```
 ---
 ## Outcome
