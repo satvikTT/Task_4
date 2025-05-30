@@ -112,7 +112,7 @@ Configure and test basic firewall rules to allow or block traffic on a Windows o
 
 6. Remove Test Block Rule:
 
--Right-click the rule > Delete.
+- Right-click the rule > Delete.
 
 ---
 ## Outcome
