@@ -83,6 +83,38 @@ Configure and test basic firewall rules to allow or block traffic on a Windows o
    sudo ufw delete 4
    ```
 ---
+
+### For WINDOWS MACHINE
+1. Open Firewall Settings:
+
+- Go to Control Panel > System and Security > Windows Defender Firewall.
+- Click on Advanced settings (left pane).
+
+2. List Current Rules:
+
+- In the Windows Firewall with Advanced Security window, view Inbound Rules and Outbound Rules.
+
+3. Add a Rule to Block Inbound Traffic (e.g., port 23):
+
+- In Inbound Rules, click New Rule…
+- Choose Port, click Next.
+- Select TCP or UDP (for Telnet, use TCP), and specify port 23.
+- Choose Block the connection > Apply to all profiles.
+- Name the rule and finish.
+
+4. Test the Rule:
+
+- Try connecting using a Telnet client (telnet localhost 23) or simulate a connection.
+
+5. Allow SSH :
+
+- Same as above, allow port 22 instead of blocking it.
+
+6. Remove Test Block Rule:
+
+-Right-click the rule > Delete.
+
+---
 ## Outcome
 
 - Gained practical experience configuring firewall rules.
