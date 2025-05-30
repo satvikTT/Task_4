@@ -7,6 +7,8 @@ A firewall is a security system that monitors and controls incoming and outgoing
 - Inbound traffic: Data coming into the system (e.g., from the internet to your device).
 - Outbound traffic: Data going out from your system to other devices or the internet.
 
+  ---
+
 2. Rule-Based Filtering
    
 Firewalls use a list of rules to decide what to do with each packet of data. Rules can filter based on:
@@ -20,6 +22,8 @@ Firewalls use a list of rules to decide what to do with each packet of data. Rul
   -DROP – Silently block the traffic
   -REJECT – Block the traffic and send an error message
 
+---
+
 3. Chains and Policies (for tools like iptables or nftables)
    
 -Traffic is processed through predefined chains:
@@ -29,17 +33,23 @@ Firewalls use a list of rules to decide what to do with each packet of data. Rul
 
 -Each chain can have a default policy (e.g., ACCEPT or DROP) that applies if no rules match.
 
+---
+
 4. Types of Firewalls
 
 -Host-based firewalls: Run on individual devices to protect them (e.g., iptables, ufw).
 
 -Network-based firewalls: Protect entire networks from outside threats.
 
+---
+
 5. Stateful vs Stateless
 
 -Stateful firewalls: Keep track of ongoing connections and allow related traffic.
 
 -Stateless firewalls: Evaluate each packet on its own, without context.
+
+---
 
 ## Purpose
 Firewalls are designed to allow trusted, expected traffic and block harmful, unauthorized traffic to keep systems and networks secure.
