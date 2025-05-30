@@ -57,11 +57,11 @@ Configure and test basic firewall rules to allow or block traffic on a Windows o
      ```bash
      nc -vz 192.168.2.123 4444
      ```
-   - - Output will be in the form
+     - Output will be in the form
      nc:listening on [any] 4444 ...192.168.2.123: inverse host lookup failed:
      Unknown host connect to [192.168.2.123] from (UNKNOWN) [192.168.2.123] 50044
    - Remote test (another machine)
-   - - On different machine  (same network)
+     - On different machine  (same network)
        ```bash
        nc -vz 192.168.2.123 4444
        ```
